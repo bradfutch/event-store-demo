@@ -4,7 +4,7 @@ logger.level:
   io.pivotal.dmfrey: DEBUG
 
 server:
-  port: ${PORT:9080}
+  port: ${PORT:8080}
   use-forward-headers: true
   tomcat:
     remote-ip-header: x-forwarded-for

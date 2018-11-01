@@ -3,7 +3,8 @@ debug: false
 logger.level:
   io.pivotal.dmfrey: DEBUG
   org.springframework.web: DEBUG
-  com.netflix.feign: DEBUG
+  com.netflix.feign: FULL
+  org.springframework.cloud.openfeign: DEBUG
 
 server:
   port: ${PORT:8765}
@@ -11,6 +12,8 @@ server:
   tomcat:
     remote-ip-header: x-forwarded-for
     protocol-header: x-forwarded-proto
+
+ribbon.eager-load.enabled: true
 
 spring:
   jackson:

@@ -1,13 +1,13 @@
 ---
 applications:
 - name: esd-event-store
-  host: esd-event-store-development
+  host: brad-esd-event-store-development
   buildpack: java_buildpack_offline
   memory: 1024M
   instances: 2
   path: build/libs/event-store-0.0.1-SNAPSHOT.jar
   services:
-    - discovery-service
+    - service_registry
     - hystrix-dashboard
     - rabbitmq
     - mysql
