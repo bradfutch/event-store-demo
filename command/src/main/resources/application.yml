@@ -36,6 +36,8 @@ spring:
             brokers: localhost
             zkNodes: localhost
 
+ribbon.eager-load.enabled: true
+
 ---
 spring:
   profiles: kafka

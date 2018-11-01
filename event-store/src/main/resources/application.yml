@@ -42,3 +42,7 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+
+ribbon.eager-load.enabled: true
+
+

@@ -33,6 +33,8 @@ logger.level:
   io.pivotal.dmfrey: DEBUG
   org.springframework.web: DEBUG
 
+ribbon.eager-load.enabled: true
+
 ---
 spring:
   profiles: kafka
